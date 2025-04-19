@@ -1,11 +1,11 @@
 import { ZarimanBountyFinder } from "./ZarimanBountyFinder.js"
 import { GenerateEmbed } from "./GenerateEmbed.js"
-import { WFMessage } from "./MessageFunc.js"
+import { timeSettings } from "./TimeSettings.js"
 
 const bountyInfo = await ZarimanBountyFinder()
 
 if (bountyInfo !== null) {
-    WFMessage(GenerateEmbed(bountyInfo))
+    timeSettings(GenerateEmbed(bountyInfo))
 }
 
 
