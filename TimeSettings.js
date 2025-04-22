@@ -11,9 +11,6 @@ const options = {
 const formatter = new Intl.DateTimeFormat("en-US", options);
 const currentTime = parseInt(formatter.format(now));
 
-console.log(currentTime)
-
-
 export const timeSettings = (message) => {
     if (currentTime >= 10 && currentTime <= 22) {
             WFMessage(message)
