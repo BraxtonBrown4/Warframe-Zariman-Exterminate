@@ -9,10 +9,10 @@ const options = {
 };
 
 const formatter = new Intl.DateTimeFormat("en-US", options);
-const currentTime = parseInt(formatter.format(now));
+const centralTime = parseInt(formatter.format(now));
 
 export const timeSettings = (message) => {
-    if (currentTime >= 10 && currentTime <= 22) {
+    if (centralTime >= 10 && centralTime <= 22) {
             WFMessage(message)
     } else {
         console.log('Warframe Zariman Exterminate is not messaging right now due to nighttime restrictions.')
