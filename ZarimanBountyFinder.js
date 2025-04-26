@@ -1,9 +1,9 @@
 import { BountyDictFinder } from "./BountyDictFinder.js"
 
 const challengeChecker = (challenge) => {
-    const badChallenges = ['/ZarimanExterminateNoPowersChallenge', '/ZarimanKillAsOperator', '/ZarimanDefeatVoidAngelChallenge']
+    const goodChallenges = ['/ZarimanExterminateFastCompleteChallenge', '/ZarimanUseVoidRiftsHardChallenge']
 
-    return !badChallenges.some(BC => challenge.includes(BC));
+    return goodChallenges.some(GC => challenge.includes(GC));
 }
 
 export const ZarimanBountyFinder = async () => {
